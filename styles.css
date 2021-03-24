@@ -3,3 +3,10 @@ h1{
     font-family: sans-serif;
     font-size: 30px;
 }
+span{
+    color: darkred;
+}
+header, .div_text{
+    margin: auto;
+    width: 50%;
+}

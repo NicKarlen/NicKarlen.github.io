@@ -13,7 +13,8 @@
 
         </header>
         <div class="div_text" >
-            <h2>The current BTC Price is:  <span id="btcPrice"></span></h2>
+            <h2>The current BTC Price is:   <span id="btcPrice"></span>  USD</h2>
+            <h2>The current BTC Price is:   <span id="btcPriceEUR"></span>  EUR</h2>
         </div>
 
         <!-- TradingView Widget BEGIN -->
@@ -43,6 +44,19 @@
         </div>
         <!-- TradingView Widget END -->
 
+        <div class="div_text">
+            <h3>Enter at which price and how much you bought (Your data will be stored locally ONLY!)</h3>
+            
+
+            <table class="excelTable">
+                <tr>
+                    <label for="Amount">Amount: </label><input id="Buy_Amount" type="text" placeholder="0.0">  
+                    <label for="Price">  Price:  </label><input id="Buy_Price" type="text" placeholder="XXXXX">
+                </tr>
+            </table>
+
+            <h3><button onclick="calcPL()">Calculate</button>  Profit/Loss: <span id="Profit/Loss"></span> %</h3>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
